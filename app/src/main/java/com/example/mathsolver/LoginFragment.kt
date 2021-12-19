@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.example.mathsolver.MainActivity.Companion.emailTxt
 import com.example.mathsolver.MainActivity.Companion.isLoggedIn
 import com.google.firebase.auth.FirebaseAuth
 
@@ -41,10 +42,16 @@ class LoginFragment : Fragment() {
 
     private fun LoginUser(email: String, password: String) {
         auth = FirebaseAuth.getInstance()
-        auth.signInWithEmailAndPassword(email, password).addOnSuccessListener{
-            Toast.makeText(view?.context, "Login successful", Toast.LENGTH_SHORT).show()
-            isLoggedIn = true
-            activity?.finish()
+        auth.signInWithEmailAndPassword(email, password).addOnCompleteListener{task->
+            if(task.isSuccessful)
+            {
+                Toast.makeText(view?.context, "Login successful", Toast.LENGTH_SHORT).show()
+                isLoggedIn = true
+                emailTxt = email
+                activity?.finish()
+            }
+            else
+                Toast.makeText(view?.context, "Login failed", Toast.LENGTH_SHORT).show()
         }
     }
 }

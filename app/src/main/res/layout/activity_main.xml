@@ -18,7 +18,6 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="end">
-
             <TextView
                 android:id="@+id/tvRegister"
                 android:fontFamily="@font/rajdhani_regular"
@@ -46,6 +45,18 @@
                 android:textColor="@color/white"
                 android:textSize="@dimen/btnText"
                 android:text="@string/loginText"/>
+            <TextView
+                android:id="@+id/greetPlaceholder"
+                android:fontFamily="@font/rajdhani_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/stdMargin"
+                android:layout_marginTop="@dimen/btnMargin"
+                android:paddingStart="@dimen/etPadding"
+                android:paddingEnd="@dimen/etPadding"
+                android:textColor="@color/black"
+                android:textSize="@dimen/btnText"
+                android:visibility="gone"/>
             <TextView
                 android:id="@+id/tvLogout"
                 android:fontFamily="@font/rajdhani_regular"

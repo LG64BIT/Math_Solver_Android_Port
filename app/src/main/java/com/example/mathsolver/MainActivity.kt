@@ -19,11 +19,13 @@ import android.widget.Toast
 import androidx.core.view.MotionEventCompat
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.ktx.Firebase
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
-
+    //personal access token: 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
     companion object{
         var isLoggedIn = false
+        var emailTxt = String()
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,12 +38,13 @@ class MainActivity : AppCompatActivity() {
         val register = findViewById<TextView>(R.id.tvRegister)
         val login = findViewById<TextView>(R.id.tvLogin)
         val logout = findViewById<TextView>(R.id.tvLogout)
+        val greetText = findViewById<TextView>(R.id.greetPlaceholder)
 
         madeBy.setOnClickListener{
-            madeBy.movementMethod = LinkMovementMethod.getInstance();
+            madeBy.movementMethod = LinkMovementMethod.getInstance()
         }
         ferit.setOnClickListener{
-            ferit.movementMethod = LinkMovementMethod.getInstance();
+            ferit.movementMethod = LinkMovementMethod.getInstance()
         }
         register.setOnClickListener{
             val intent = Intent(this, LoginRegisterActivity::class.java)
@@ -60,6 +63,7 @@ class MainActivity : AppCompatActivity() {
             register.visibility = View.VISIBLE
             login.visibility = View.VISIBLE
             logout.visibility = View.GONE
+            greetText.visibility = View.GONE
         }
     }
 
@@ -69,8 +73,19 @@ class MainActivity : AppCompatActivity() {
             findViewById<TextView>(R.id.tvRegister).visibility = View.GONE
             findViewById<TextView>(R.id.tvLogin).visibility = View.GONE
             findViewById<TextView>(R.id.tvLogout).visibility = View.VISIBLE
+            val greetText = findViewById<TextView>(R.id.greetPlaceholder)
+            greetText.visibility = View.VISIBLE
+            greetText.text = "Hi, "  + ParseEmail(emailTxt)
+
         }
         super.onResume()
+    }
+
+    private fun ParseEmail(email: String): String {
+        var text = email.substring(0, email.indexOf('@'))
+        text = text.replace('.', ' ')
+        text = text.replace('-', ' ')
+        return text
     }
 
     fun quadraticActivity(view: android.view.View) {
