@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/ex_light_blue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/tvRegister"
+                android:fontFamily="@font/rajdhani_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/stdMargin"
+                android:layout_marginTop="@dimen/btnMargin"
+                android:paddingStart="@dimen/etPadding"
+                android:paddingEnd="@dimen/etPadding"
+                android:background="@drawable/rounded_corners_strong_blue"
+                android:textColor="@color/white"
+                android:textSize="@dimen/btnText"
+                android:text="@string/registerText"/>
+            <TextView
+                android:id="@+id/tvLogin"
+                android:fontFamily="@font/rajdhani_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/stdMargin"
+                android:layout_marginEnd="@dimen/stdMargin"
+                android:layout_marginTop="@dimen/btnMargin"
+                android:paddingStart="@dimen/etPadding"
+                android:paddingEnd="@dimen/etPadding"
+                android:background="@drawable/rounded_corners_strong_blue"
+                android:textColor="@color/white"
+                android:textSize="@dimen/btnText"
+                android:text="@string/loginText"/>
+            <TextView
+                android:id="@+id/tvLogout"
+                android:fontFamily="@font/rajdhani_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/stdMargin"
+                android:layout_marginEnd="@dimen/stdMargin"
+                android:layout_marginTop="@dimen/btnMargin"
+                android:paddingStart="@dimen/etPadding"
+                android:paddingEnd="@dimen/etPadding"
+                android:background="@drawable/rounded_corners_strong_blue"
+                android:textColor="@color/white"
+                android:textSize="@dimen/btnText"
+                android:text="@string/logoutText"
+                android:visibility="gone"/>
+        </LinearLayout>
+        <TextView
+            android:fontFamily="@font/rajdhani_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/titleMargin"
+            android:text="@string/appTitle"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/titleTextSize"/>
+
+        <Button
+            android:fontFamily="@font/rajdhani_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/btnMargin"
+            android:background="@drawable/rounded_corners_strong_blue"
+            android:onClick="quadraticActivity"
+            android:padding="@dimen/btnPadding"
+            android:text="@string/btn1Text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/btnText" />
+
+        <Button
+            android:fontFamily="@font/rajdhani_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/btnMargin"
+            android:background="@drawable/rounded_corners_strong_blue"
+            android:onClick="matrixActivity"
+            android:padding="@dimen/btnPadding"
+            android:text="@string/btn2Text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/btnText" />
+
+        <TextView
+            android:id="@+id/ferit"
+            android:fontFamily="@font/rajdhani_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/stdMargin"
+            android:background="@drawable/rounded_corners_light_blue"
+            android:padding="@dimen/tvPadding"
+            android:text="@string/aboutAppText"
+            android:textAlignment="center"
+            android:textSize="@dimen/stdTextSize" />
+
+        <TextView
+            android:id="@+id/madeBy"
+            android:fontFamily="@font/rajdhani_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/stdMargin"
+            android:textSize="@dimen/stdTextSize"
+            android:text="@string/madeBy"
+            android:textAlignment="center" />
+
+        <TextView
+            android:fontFamily="@font/rajdhani_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/stdMargin"
+            android:autoLink="email"
+            android:text="@string/haveProblems"
+            android:textAlignment="center"
+            android:textSize="@dimen/stdTextSize"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

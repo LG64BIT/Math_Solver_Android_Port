@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Math Solver</string>
+    <string name="appTitle">Math Solver</string>
+    <string name="btn1Text">Quadratic equation</string>
+    <string name="btn2Text">Matrix multiplication</string>
+    <string name="btn3Text">Sum calculator</string>
+    <string name="aboutAppText">This online tool is a project of student from Faculty of Electrical Engineering,
+        Computer Science and Information Technology Osijek (<a href="https://www.ferit.unios.hr/2021/">FERIT</a>),
+        <br />and is available for free use and distribution to everyone only for educational purposes. Enjoy and have fun!</string>
+    <string name="madeBy">Made by: <a href="https://github.com/LG64BIT">Leon Gal</a></string>
+    <string name="haveProblems">Have problems? Send an email<br />(leon.gal@hotmail.com)</string>
+    <string name="quadraticTitle">Quadratic equation solver</string>
+    <string name="matrixTitle">Matrix multiplication calculator</string>
+    <string name="AboutMatrix">The main condition of matrix multiplication is that the number of columns of the 1st matrix must equal to the number of rows of the 2nd one.
+        As a result of multiplication you will get a new matrix that has the same quantity of rows as the 1st one has and the same quantity of columns as the 2nd one.</string>
+    <string name="sumTitle">Sum calculator</string>
+    <string name="eqText1">x<sup>2</sup> +</string>
+    <string name="eqText2">x +</string>
+    <string name="aboutQuadratic">In algebra, a quadratic equation is any polynomial equation of the second degree with the following form:
+        <br /><b>ax<sup>2</sup>+bx+c</b><br />
+        where x is an unknown, a is referred to as the quadratic coefficient, b the linear coefficient, and c the constant. The numerals a, b, and c are
+        coefficients of the equation, and they represent known numbers. For example, a cannot be 0, or the equation would be linear rather than quadratic.
+        A quadratic equation can be solved in multiple ways, including factoring, using the quadratic formula, completing the square, or graphing.
+        </string>
+    <string name="matrix_b_text">Matrix B dimension:</string>
+    <string name="matrix_a_text">Matrix A dimension:</string>
+    <string name="matrix_a">Matrix A:</string>
+    <string name="matrix_b">Matrix B:</string>
+    <string name="result_text">Result:</string>
+    <string name="btnCalculate">Calculate</string>
+    <string name="loginText">Login</string>
+    <string name="registerText">Register</string>
+    <string name="logoutText">Logout</string>
+</resources>

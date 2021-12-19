@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "259538816947",
+    "project_id": "math-solver-38675",
+    "storage_bucket": "math-solver-38675.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259538816947:android:586add9ffb0680ca1ec5c6",
+        "android_client_info": {
+          "package_name": "com.example.mathsolver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "259538816947-lfmb2tdq74sn0ph51pfihnhrl4v9bq1d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBZOGt1ywj8Ho8kHGOIgtsIZH0e1yB8pw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "259538816947-lfmb2tdq74sn0ph51pfihnhrl4v9bq1d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

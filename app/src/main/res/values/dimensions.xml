@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titleTextSize">48sp</dimen>
+    <dimen name="titleMargin">24dp</dimen>
+    <dimen name="btnText">20sp</dimen>
+    <dimen name="btnMargin">5dp</dimen>
+    <dimen name="aboutTextMargin">10dp</dimen>
+    <dimen name="stdMargin">20dp</dimen>
+    <dimen name="margin40sp">40sp</dimen>
+    <dimen name="stdTextSize">24sp</dimen>
+    <dimen name="btnPadding">5dp</dimen>
+    <dimen name="tvPadding">5dp</dimen>
+    <dimen name="etMargin">5dp</dimen>
+    <dimen name="etPadding">5dp</dimen>
+    <dimen name="etTextSize">24sp</dimen>
+    <dimen name="resultText">26sp</dimen>
+</resources>

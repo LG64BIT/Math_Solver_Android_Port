@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterFragment"
+    android:background="@color/ex_light_blue"
+    android:orientation="vertical">
+
+    <TextView
+        android:fontFamily="@font/rajdhani_regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/titleMargin"
+        android:layout_marginTop="@dimen/titleMargin"
+        android:text="@string/registerText"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/titleTextSize"/>
+    <EditText
+        android:id="@+id/etEmail"
+        android:fontFamily="@font/rajdhani_regular"
+        android:textSize="@dimen/stdTextSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/stdMargin"
+        android:layout_marginBottom="@dimen/stdMargin"
+        android:inputType="textEmailAddress"
+        android:hint="Email:"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:fontFamily="@font/rajdhani_regular"
+        android:textSize="@dimen/stdTextSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/stdMargin"
+        android:layout_marginBottom="@dimen/stdMargin"
+        android:inputType="textPassword"
+        android:hint="Password:"/>
+    <EditText
+        android:id="@+id/etRePassword"
+        android:fontFamily="@font/rajdhani_regular"
+        android:textSize="@dimen/stdTextSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/stdMargin"
+        android:layout_marginBottom="@dimen/stdMargin"
+        android:inputType="textPassword"
+        android:hint="Repeat password:"/>
+    <Button
+        android:id="@+id/finishRegisterBtn"
+        android:fontFamily="@font/rajdhani_regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/stdMargin"
+        android:background="@drawable/rounded_corners_strong_blue"
+        android:text="@string/registerText"
+        android:textColor="@color/white"
+        android:textSize="@dimen/btnText" />
+    <TextView
+        android:id="@+id/madeBy"
+        android:fontFamily="@font/rajdhani_regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/stdMargin"
+        android:textSize="@dimen/stdTextSize"
+        android:text="Already registered?"
+        android:textAlignment="center" />
+    <Button
+        android:id="@+id/loginBtn"
+        android:fontFamily="@font/rajdhani_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rounded_corners_strong_blue"
+        android:text="@string/loginText"
+        android:textColor="@color/white"
+        android:textSize="@dimen/btnText" />
+</LinearLayout>
