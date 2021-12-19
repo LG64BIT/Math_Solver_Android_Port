@@ -1,3 +1,5 @@
+#Math Solver
+
 Math Solver ported down to mobile using Android Studio (Kotlin), min SDK version is 23.
 
 App with 2 basic functionalities, quadratic equation solver, matrix multiplication calculator.
