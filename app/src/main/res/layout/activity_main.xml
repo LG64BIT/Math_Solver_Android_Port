@@ -119,6 +119,7 @@
             android:padding="@dimen/tvPadding"
             android:text="@string/aboutAppText"
             android:textAlignment="center"
+            android:textColor="@color/black"
             android:textSize="@dimen/stdTextSize" />
 
         <TextView
@@ -129,6 +130,7 @@
             android:layout_margin="@dimen/stdMargin"
             android:textSize="@dimen/stdTextSize"
             android:text="@string/madeBy"
+            android:textColor="@color/black"
             android:textAlignment="center" />
 
         <TextView
@@ -140,6 +142,7 @@
             android:text="@string/haveProblems"
             android:textAlignment="center"
             android:textSize="@dimen/stdTextSize"
+            android:textColor="@color/black"
             tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
